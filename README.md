@@ -1,0 +1,1 @@
+# Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor
