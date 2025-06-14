@@ -112,14 +112,16 @@ return msg;
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/funcion%203.png?raw=true)
 
 - chart 1 (se empleara para poder observar en graficos los cambios de las variables)
-![]()
-- gauge 1 (temperatura)
-[] 
-- gauge 2 (humedad)
-[] 
-- gauge 3 (distancia)
-[] 
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/chart%201.png?raw=true)
 
+- gauge 1 (temperatura)
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/gauge%201.png?raw=true)
+
+- gauge 2 (humedad)
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/gauge%202.png?raw=true) 
+
+- gauge 3 (distancia)
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/gauge%203.png?raw=true)
 
 
 # Créditos
