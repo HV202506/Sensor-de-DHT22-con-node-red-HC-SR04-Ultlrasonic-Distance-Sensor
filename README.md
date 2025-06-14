@@ -179,8 +179,8 @@ Instalar las siguientes librerias
 2. Observar el envio de los datos a traves del monitor serial.
 3. Variar los valores de la temperatura, humedad y distancia para observar que se actualizan adecuadamente
 
-## 2 Node-RED 
-# 2.1 Dentro del Node-RED ya funcionando se agregara la siguiente libreria
+# 2 Node-RED 
+## 2.1 Dentro del Node-RED ya funcionando se agregara la siguiente libreria
 
 - node-red-dashboard
 - 
@@ -190,7 +190,7 @@ Instalar las siguientes librerias
 ![]() IMAGENES DE DASHBOARD
 ![]() IMAGENES DE DASHBOARD
 
-# 2.2 Integrar en la interfaz los siguientes elementos
+## 2.2 Integrar en la interfaz los siguientes elementos
 - mqtt in (para hacer de entrada de dats)
 - json (para comunicacion entre aplicaciones web y servidores)
 - debug (para observar la informacion que se esta recibiendo)
@@ -202,12 +202,12 @@ Instalar las siguientes librerias
 - chart 2 (humedad)
 - chart 3 (distancia)
 
-# 2.3 Conexiones Node-RED
+## 2.3 Conexiones Node-RED
 Se interconectaran los elementos tal cual se muestra en la siguiente imagen
 
 ![](CONEXIONES 2)
 
-#  2.4 Configuraciones de los bloques de Node-RED
+##  2.4 Configuraciones de los bloques de Node-RED
 
 - mqtt in (para hacer de entrada de dats)
 [] 
