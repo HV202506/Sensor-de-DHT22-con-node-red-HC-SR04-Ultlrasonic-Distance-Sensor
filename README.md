@@ -32,7 +32,7 @@ Instalar las siguientes librerias
 - DHT Sensor library for ESPx
 - PubSubClient
 
-![](LIBRERIAS)
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/librerias.png?raw=true)
 
 ## 1.3 Hacer las conexiones entre los elementos del entorno simulado del siguiente modo como se muestra en la imagen
 
@@ -49,11 +49,12 @@ Instalar las siguientes librerias
 
 - node-red-dashboard
 - 
-![]() IMAGENES DE DASHBOARD
-![]() IMAGENES DE DASHBOARD
-![]() IMAGENES DE DASHBOARD
-![]() IMAGENES DE DASHBOARD
-![]() IMAGENES DE DASHBOARD
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/iDashboard%201.png?raw=true)
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/iDashboard%202.png?raw=true)
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/iDashboard%203.png?raw=true)
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/iDashboard%204.png?raw=true)
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/iDashboard%205.png?raw=true)
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/iDashboard%206.png?raw=true)
 
 ## 2.2 Integrar en la interfaz los siguientes elementos
 - mqtt in (para hacer de entrada de dats)
@@ -62,10 +63,10 @@ Instalar las siguientes librerias
 - function 1 (se empleara para la temperatura)
 - function 2 (se empleara para la humedad)
 - function 3 (se empleara para la distancia)
-- gauge 1 (se empleara para poder observar en graficos los cambios de las variables)
-- chart 1 (temperatura)
-- chart 2 (humedad)
-- chart 3 (distancia)
+- chart 1 (se empleara para poder observar en graficos los cambios de las variables)
+- gauge 1 (temperatura)
+- gauge 2 (humedad)
+- gauge 3 (distancia)
 
 ## 2.3 Conexiones Node-RED
 Se interconectaran los elementos tal cual se muestra en la siguiente imagen
@@ -75,19 +76,24 @@ Se interconectaran los elementos tal cual se muestra en la siguiente imagen
 ##  2.4 Configuraciones de los bloques de Node-RED
 
 - mqtt in (para hacer de entrada de dats)
-[] 
+
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/mqtt.png?raw=true)
+
 - json (para comunicacion entre aplicaciones web y
 servidores)
-[] 
+
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/json.png?raw=true)
 - debug (para observar la informacion que se esta recibiendo)
-[] 
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/debug.png?raw=true)
+
 - function 1 (se empleara para la temperatura)
+
 ```
 msg.payload = msg.payload.TEMPERATURA;
 msg.topic = "TEMPERATURA";
 return msg;
 ```
-[] 
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/funcion%201.png?raw=true)
 
 - function 2 (se empleara para la humedad)
 ```
@@ -95,21 +101,23 @@ msg.payload = msg.payload.HUMEDAD;
 msg.topic = "HUMEDAD";
 return msg;
 ```
-[] 
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/funcion%202.png?raw=true)
+
 - function 3 (se empleara para la distancia)
 ```
 msg.payload = msg.payload.DISTANCIA;
 msg.topic = "DISTANCIA";
 return msg;
 ```
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/funcion%203.png?raw=true)
+
+- chart 1 (se empleara para poder observar en graficos los cambios de las variables)
+![]()
+- gauge 1 (temperatura)
 [] 
-- gauge 1 (se empleara para poder observar en graficos los cambios de las variables)
+- gauge 2 (humedad)
 [] 
-- chart 1 (temperatura)
-[] 
-- chart 2 (humedad)
-[] 
-- chart 3 (distancia)
+- gauge 3 (distancia)
 [] 
 
 
