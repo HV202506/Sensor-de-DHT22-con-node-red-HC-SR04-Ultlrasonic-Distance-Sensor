@@ -10,6 +10,7 @@ Este proyecto se realizara empleando las siguientes herramientas
 - Node-RED
 
 # Material necesario
+
 - WOKWI
 - Una tarjeta ESP32 (para adquisicion de datos)
 - Sensor ultrasonico "HC-SR04 Ultrasonic Distance Sensor"
@@ -18,6 +19,7 @@ Este proyecto se realizara empleando las siguientes herramientas
   # Desarrollo de la proyecto
 
 ## 1 Entorno simulado (WOKWI)
+
 ## 1.1 Codigo para el entorno simulado en WOKWI
 
   ```
@@ -187,6 +189,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
   }
 }
   ```
+
 ## 1.2 Librerias empleadas para el entorno simulado en WOKWI
 
 Instalar las siguientes librerias
@@ -209,6 +212,7 @@ Instalar las siguientes librerias
 3. Variar los valores de la temperatura, humedad y distancia para observar que se actualizan adecuadamente
 
 # 2 Node-RED 
+
 ## 2.1 Dentro del Node-RED ya funcionando se agregara la siguiente libreria
 
 - node-red-dashboard
@@ -221,6 +225,7 @@ Instalar las siguientes librerias
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/iDashboard%206.png?raw=true)
 
 ## 2.2 Integrar en la interfaz los siguientes elementos
+
 - mqtt in (para hacer de entrada de dats)
 - json (para comunicacion entre aplicaciones web y servidores)
 - debug (para observar la informacion que se esta recibiendo)
@@ -233,6 +238,7 @@ Instalar las siguientes librerias
 - gauge 3 (distancia)
 
 ## 2.3 Conexiones Node-RED
+
 Se interconectaran los elementos tal cual se muestra en la siguiente imagen
 
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/conexiones.png?raw=true2)
@@ -247,7 +253,9 @@ Se interconectaran los elementos tal cual se muestra en la siguiente imagen
 servidores)
 
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/json.png?raw=true)
+
 - debug (para observar la informacion que se esta recibiendo)
+
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/debug.png?raw=true)
 
 - function 1 (se empleara para la temperatura)
@@ -257,6 +265,7 @@ msg.payload = msg.payload.TEMPERATURA;
 msg.topic = "TEMPERATURA";
 return msg;
 ```
+
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/funcion%201.png?raw=true)
 
 - function 2 (se empleara para la humedad)
@@ -265,6 +274,7 @@ msg.payload = msg.payload.HUMEDAD;
 msg.topic = "HUMEDAD";
 return msg;
 ```
+
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/funcion%202.png?raw=true)
 
 - function 3 (se empleara para la distancia)
@@ -273,18 +283,23 @@ msg.payload = msg.payload.DISTANCIA;
 msg.topic = "DISTANCIA";
 return msg;
 ```
+
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/funcion%203.png?raw=true)
 
 - chart 1 (se empleara para poder observar en graficos los cambios de las variables)
+  
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/chart%201.png?raw=true)
 
 - gauge 1 (temperatura)
+
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/gauge%201.png?raw=true)
 
 - gauge 2 (humedad)
+
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/gauge%202.png?raw=true) 
 
 - gauge 3 (distancia)
+
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/gauge%203.png?raw=true)
 
 # Resultados:
@@ -292,12 +307,15 @@ return msg;
 En el apartado de Dashboard se encontrara una visualizacion del los valores del entorno a traves de un grafico, aqui se anexa una screenshot de como se ve el resultado final.
 
 Para acceder al dashboard, hacer click en el triangulo de la parte superior derecha
+
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/dashboard%201.png?raw=true)
 
 Elegir la opcion dashboard y dar click en el icono de visualizar en otra pestaña
+
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/dashboard%202.png?raw=true)
 
 Observacion del dashboard
+
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/DASHBOARD.png?raw=true)
 
 
