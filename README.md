@@ -212,7 +212,7 @@ Instalar las siguientes librerias
 ## 2.1 Dentro del Node-RED ya funcionando se agregara la siguiente libreria
 
 - node-red-dashboard
-- 
+  
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/iDashboard%201.png?raw=true)
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/iDashboard%202.png?raw=true)
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/iDashboard%203.png?raw=true)
@@ -286,6 +286,19 @@ return msg;
 
 - gauge 3 (distancia)
 ![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/gauge%203.png?raw=true)
+
+# Resultados:
+
+En el apartado de Dashboard se encontrara una visualizacion del los valores del entorno a traves de un grafico, aqui se anexa una screenshot de como se ve el resultado final.
+
+Para acceder al dashboard, hacer click en el triangulo de la parte superior derecha
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/dashboard%201.png?raw=true)
+
+Elegir la opcion dashboard y dar click en el icono de visualizar en otra pestaña
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/dashboard%202.png?raw=true)
+
+Observacion del dashboard
+![](https://github.com/HV202506/Sensor-de-DHT22-con-node-red-HC-SR04-Ultlrasonic-Distance-Sensor/blob/main/DASHBOARD.png?raw=true)
 
 
 # Créditos
